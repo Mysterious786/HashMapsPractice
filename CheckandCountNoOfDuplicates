@@ -3,7 +3,7 @@ package virujavaapplication;
 import java.util.*;
 
 public class CountDuplicate {
-	public static ArrayList<Integer> Count(int[] arr) {
+	public static ArrayList<Integer> Check(int[] arr) {
 		ArrayList<Integer> output=new ArrayList<>();
 		HashMap<Integer,Integer> map =new HashMap<>();
 		
@@ -19,16 +19,22 @@ public class CountDuplicate {
 		for(int i: map.keySet()) {
 			if(map.get(i)>1) {
 				output.add(i);
+				System.out.println(map.get(i));
 			}
+			
 		}
-		return output;
+		int count=output.size();
+		System.out.println("Counts of duplicates are "+count);
+
+	    return output;
 		
 
 	}
+	
 
 	public static void main(String[] args) {
 		int[] arr= {1,2,3,2,2,3,4,2,4,5,3,2};
-		System.out.print(Count(arr));
+		System.out.print(Check(arr));
 	}
 
 }
