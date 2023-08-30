@@ -1,0 +1,61 @@
+package virujavaapplication;
+
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class AddDistinctSubduplicate {
+    public static int AdddistinctSubduplicates(int... numbers) {
+//		HashMap<Integer,Integer> hs=new HashMap<>();
+//		for(int num: numbers) {
+//			hs.put(num, hs.getOrDefault(num, 0)+1);
+//			
+//		}
+// //        hs.put(a,hs.getOrDefault(a, 0)+1);
+//   //      hs.put(b,hs.getOrDefault(b, 0)+1);
+//     //    hs.put(c,hs.getOrDefault(c, 0)+1);
+//       //  hs.put(d,hs.getOrDefault(d, 0)+1);
+//        
+//        int sumdistinct=0;
+//        int duplicate=0;
+//        for (int num : hs.keySet()) {
+//            int count = hs.get(num);
+//            if (count == 1) {
+//                sumdistinct += num;
+//            } else if (count > 1) {
+//                duplicate = num;
+//            }
+//   
+    	   int[] counts = new int[101];
+           int sumDistinct = 0;
+           int duplicate = 0;
+
+           for (int num : numbers) {
+               counts[num]++;
+               if (counts[num] == 1) {
+                   sumDistinct += num;
+               } else if (counts[num] == 2) {
+                   sumDistinct -= num;
+                   duplicate += num;
+               }
+           }
+
+           return sumDistinct - duplicate;
+      
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of inputs: ");
+        int n = scanner.nextInt();
+
+        int[] inputs = new int[n];
+        for (int i = 0; i < n; i++) {
+            System.out.print("Enter input " + (i + 1) + ": ");
+            inputs[i] = scanner.nextInt();
+        }
+        scanner.close();
+
+        System.out.print(AdddistinctSubduplicates(inputs));
+    }
+}
