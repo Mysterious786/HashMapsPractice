@@ -1,5 +1,4 @@
 import java.util.*;
-
 public class CountDuplicate {
 	public static ArrayList<Integer> Check(int[] arr) {
 		ArrayList<Integer> output=new ArrayList<>();
