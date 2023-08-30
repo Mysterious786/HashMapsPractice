@@ -1,5 +1,3 @@
-package virujavaapplication;
-
 import java.util.*;
 
 public class CountDuplicate {
