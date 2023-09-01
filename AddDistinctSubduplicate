@@ -6,7 +6,7 @@ public class AddDistinctSubduplicate {
 //		HashMap<Integer,Integer> hs=new HashMap<>();
 //		for(int num: numbers) {
 //			hs.put(num, hs.getOrDefault(num, 0)+1);
-//			
+		
 //		}
 // //        hs.put(a,hs.getOrDefault(a, 0)+1);
 //   //      hs.put(b,hs.getOrDefault(b, 0)+1);
