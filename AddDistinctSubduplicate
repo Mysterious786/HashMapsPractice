@@ -3,6 +3,7 @@ import java.util.Scanner;
 
 public class AddDistinctSubduplicate {
     public static int AdddistinctSubduplicates(int... numbers) {
+//Using HashMap method 1
 //		HashMap<Integer,Integer> hs=new HashMap<>();
 //		for(int num: numbers) {
 //			hs.put(num, hs.getOrDefault(num, 0)+1);
