@@ -9,7 +9,7 @@ public class AddDistinctSubduplicate {
 		
 //		}
 //         hs.put(a,hs.getOrDefault(a, 0)+1);
-//   //      hs.put(b,hs.getOrDefault(b, 0)+1);
+//         hs.put(b,hs.getOrDefault(b, 0)+1);
 //        hs.put(c,hs.getOrDefault(c, 0)+1);
 //        hs.put(d,hs.getOrDefault(d, 0)+1);
 //        
