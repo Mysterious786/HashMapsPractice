@@ -1,1 +1,1 @@
-# HashMapsPractice
+# HashMapPractice
