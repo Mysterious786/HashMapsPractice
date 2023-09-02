@@ -17,7 +17,6 @@ public class CountDuplicate {
 				output.add(i);
 				System.out.println(map.get(i));
 			}
-			
 		}
 		int count=output.size();
 		System.out.println("Counts of duplicates are "+count);
