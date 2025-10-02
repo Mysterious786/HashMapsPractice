@@ -14,7 +14,7 @@ public class CountDuplicate {
 		} 
 		for(int i: map.keySet()) {
 			if(map.get(i)>1) {
-// just for fun
+// just 
 				output.add(i);
 				System.out.println(map.get(i));
 			}
